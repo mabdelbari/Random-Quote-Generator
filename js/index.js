@@ -16,15 +16,14 @@ var quoteIndex = 0;
 
 var printQuote = function () {
     if (quoteIndex< quotes.length) {
-        console.log(quoteIndex);
         document.getElementById('quoteContent').innerHTML = `<i class="fa-solid fa-quote-left"></i> ${quotes[quoteIndex].quoteContent} <i class="fa-solid fa-quote-right"></i>`;
         document.getElementById('quoteAuthor').innerHTML = quotes[quoteIndex].quoteAuthor;
     }
 
-    var newQuoteIndex = Math.floor(Math.random() * 10);
+    var newQuoteIndex = Math.floor(Math.random() * quotes.length);
 
     while (newQuoteIndex == quoteIndex) {
-        newQuoteIndex = Math.floor(Math.random() * 10);
+        newQuoteIndex = Math.floor(Math.random() * quotes.length);
     }
     quoteIndex = newQuoteIndex;
 }
