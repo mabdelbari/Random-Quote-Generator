@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Random Quote Generator</title>
+
+    <!-- Google Fonts -->
+
+
+    <!-- Bootstrap Framework -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+    <!-- FontAwesome Library -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Main StyleSheets -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container min-vh-100 d-flex flex-column align-items-center justify-content-center text-center">
+        <h1 class="mb-5 text-white">Random Quote Generator</h1>
+        <div class="wrapper bg-white rounded-2 shadow py-2 px-2 px-md-5">
+            <div class="quote-header border-bottom">
+                <h2>Quote of the Day</h2>
+            </div>
+            <div class="quote-content my-3">
+                <p id="quoteContent" class="fs-4"></p>
+                <p id="quoteAuthor" class="text-muted fs-5 fst-italic" style="text-align: right ;"></p>
+            </div>
+            <div class="quote-footer border-top p-3">
+                <button class="btn rounded-pill" onclick="printQuote()">New Quote</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+body {
+    background-color: #3aa1a1;
+}
+
+.container>div {
+    width: 800px;
+}
+
+button {
+    background: #41b8b8 !important;
+    color: white !important;
+    transition: all 0.5s;
+}
+
+button:hover {
+    background-color: #3aa1a1 !important;
+}
+
+
+@media screen and (max-width: 991px) {
+    .container>div {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container>div {
+        width: 90%;
+    }
+
+    #quoteContent {
+        font-size: 1.2rem !important;
+    }
+
+    #quoteAuthor {
+        font-size: 1.0rem !important;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .container>div {
+        width: 100% !important;
+    }
+
+    #quoteContent {
+        font-size: 1rem !important;
+    }
+
+    #quoteAuthor {
+        font-size: 0.875rem !important;
+    }
+}
